@@ -44,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
         background-color: white;
         color: black;
-        border-radius: 25px;
 }
 
 .feature > figcaption {
@@ -195,15 +194,18 @@ input {
 .tooltip span {
   visibility: hidden;
   width: 10em;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
   border-radius: 6px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
   padding: 5px 0;
   position: absolute;
   z-index: 9;
-  top: -1em;
-  left:  100%;
+  top: 2em;
+  left: -50%;
   margin-left:1em;
   opacity: 0;
   transition: opacity 1s;
@@ -211,12 +213,12 @@ input {
 .tooltip span::after {
   content: "";
   position: absolute;
-  top: 1.5em;
-  right: 100%;
-  margin-top: -5px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent black transparent transparent;
+  border-color: transparent transparent black transparent;
 }
 .tooltip input {
   display:none;
