@@ -9,7 +9,6 @@ body {
         padding-top: 0em;
         background-image: url("lennon-cheng-yAeUPmbyS-0-unsplash.jpg");
         background-size: auto;
-        /* background-repeat: no-repeat; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,14 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 .playStoreButton {
         vertical-align: middle;
         max-height: 6em;
-}
-
-pre {
-        padding: 1em;
-        border-radius: 10px;
-        /* white-space: pre-wrap; */
-        overflow-x: auto;
-
 }
 
 .limited {
@@ -100,20 +91,12 @@ pre {
 
 
 .white {
-        /* background-color: #d33847; */
-        /* background-color: rgba(211, 56, 71, 0.95); */
         background-color: white;
         color: black;
-        /* text-shadow: 0 2px 0 white; */
-        /* box-shadow: 0 0 70px 10px rgba(211,56,71,.5) inset; */
-
-        /* box-shadow: 0 0 70px 2px rgba(0,0,0,.5) inset; */
 }
 
 .black {
-        /* background-color: #272727; */
         background-color: black;
-        /* background-color: transparent; */
         color: #eee;
 }
 
@@ -172,34 +155,6 @@ a.button:hover {
         border: 0;
         outline: 0;
 }
-
-/*
-
-a.button.inverted {
-        background: 0 0;
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-        padding: 6px 30px;
-        border: 2px solid #fff;
-        font-weight: 500;
-}
-
-a.button.inverted:hover {
-        background-color: rgba(255,255,255,.15);
-}
-
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-*/
-
-
-/*
- * A trick from https://blog.theodo.com/2018/01/responsive-iframes-css-trick/
- * to make the iframe responsive
- */
 
 .resp-container {
         position: relative;
