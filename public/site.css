@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
 }
 
-.imageStripe {
+.image-stripe {
   display: flex;
   flex-wrap: nowrap;    
   justify-content: center;
@@ -97,75 +97,45 @@ h1, h2, h3, h4, h5, h6 {
         color: #eee;
 }
 
-a.learnButton {
-        max-height: 6em;
-        font-size: 1.125em;
+a.learn-button {
+        font-size: 1.4em;
         background: #999;
         border-radius: 5px;
         border: 0;
         cursor: pointer;
         display: inline-block;
-        padding: 8px 34px;
+        text-align: center;
+        padding: 15px 16px;
+        margin: 15px;
+        vertical-align: middle;
         background: #fff;
         color: black;
         font-weight: 500;
         box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
-        margin: 15px;
         text-shadow: none;
         text-decoration: none;
 }
 
-a.learnButton:hover {
-        background: #ffd1d6;
-        background: linear-gradient(#fff,#ffd1d6);
+a.learn-button:hover {
+        background: linear-gradient(#fff,grey);
         border: 0;
         outline: 0;
-}
-
-a.button {
-        font-size: 1.125em;
-        background: #999;
-        border-radius: 5px;
-        border: 0;
-        cursor: pointer;
-        display: inline-block;
-        padding: 8px 34px;
-        background: #fff;
-        color: #f03b4d;
-        font-weight: 500;
-        box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
-        margin: 15px;
-        text-shadow: none;
-        text-decoration: none;
 }
 
 a {
-        color: #eee;
+        color: black;
 }
 a.visited {
+        color: black;
+}
+
+.bottom-link a {
+        font-size: 1.2em;
         color: #eee;
 }
-
-a.button:hover {
-        background: #ffd1d6;
-        background: linear-gradient(#fff,#ffd1d6);
-        border: 0;
-        outline: 0;
-}
-
-.resp-container {
-        position: relative;
-        overflow: hidden;
-        padding-top: 56.25%;
-}
-
-.resp-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
+.bottom-link a.visited {
+        font-size: 1.2em;
+        color: #eee;
 }
 
 input {
@@ -226,8 +196,55 @@ input {
   opacity: 1;
 }
 
+.bottom-link {
+        padding: 0.8em;
+}
 
 
-.bottomLink {
-        padding: 1em;
+.links {
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: center;
+}
+
+
+input[type=email] {
+  display: inline-block;
+  color: black;
+  padding: 0.6em;
+  width: 220px;
+  box-sizing: border-box;
+  background-color: rgba(180,180,180,1);
+  border: none;
+  border-radius: 2px;
+  margin: 0.2em auto;
+  transition:background-color 0.5s ease;
+  vertical-align: middle;
+}
+
+input[type=email]:focus {
+  background-color: rgba(255,255,255,1);
+}
+
+.subscribe-button {
+        background: #999;
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        padding: 0.6em 0.3em;
+        margin: 0.2em auto;
+        vertical-align: middle;
+        background: #fff;
+        color: black;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+        text-shadow: none;
+        text-decoration: none;
+}
+
+.subscribe-button:hover {
+        background: linear-gradient(#fff,grey);
+        border: 0;
+        outline: 0;
 }
