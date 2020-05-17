@@ -122,6 +122,37 @@ a.learn-button:hover {
         outline: 0;
 }
 
+a.video-button {
+        font-size: 1.4em;
+        background: #999;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        padding: 15px 16px;
+        margin: 15px;
+        vertical-align: middle;
+        background: #fff;
+        color: black;
+        font-weight: 500;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+        text-shadow: none;
+        text-decoration: none;
+}
+
+a.video-button:hover {
+        background: linear-gradient(#fff,grey);
+        border: 0;
+        outline: 0;
+}
+
+.image-icon {
+        height: 1.5em;;
+        vertical-align: middle;
+        margin: 0em 0.4em 0em 0em;
+}
+
 a {
         color: black;
 }
