@@ -51,11 +51,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;    
-  align-items: center;
-  justify-content: center;
+        display: flex;
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
 }
+
 
 .centered {
         text-align: center;
@@ -68,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image-stripe {
-  display: flex;
-  flex-wrap: nowrap;    
-  justify-content: center;
-  width: 100%;
-  margin: 0;
+        display: flex;
+        flex-wrap: nowrap;    
+        justify-content: center;
+        width: 100%;
+        margin: 0;
 }
 
 
@@ -173,7 +174,7 @@ input {
         font-size: 16px;
 }
 
-.featureImage {
+.feature-image {
         width: 12em;
         height: 7em;
         margin: 1em;
@@ -186,46 +187,90 @@ input {
 /* Tooltip based on https://stackoverflow.com/a/53875907 */
 
 .tooltip {
-  position: relative;
-  border-bottom: 1px dotted white;
-  text-decoration: underline;
+        position: relative;
+        border-bottom: 1px dotted white;
+        text-decoration: underline;
 }
 .tooltip span {
-  visibility: hidden;
-  width: 10em;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 9;
-  top: 2em;
-  left: -50%;
-  margin-left:1em;
-  opacity: 0;
-  transition: opacity 1s;
+        visibility: hidden;
+        width: 10em;
+        background-color: white;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 9;
+        top: 2em;
+        left: -50%;
+        margin-left:1em;
+        opacity: 0;
+        transition: opacity 1s;
 }
 .tooltip span::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
 }
 .tooltip input {
-  display:none;
+          display:none;
 }
 .tooltip input:checked+span {
-  visibility: visible;
-  opacity: 1;
+          visibility: visible;
+          opacity: 1;
 }
+
+
+.feature-stripe {
+        width: 50em;
+        display: flex;
+        flex-wrap: wrap;    
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+}
+
+.white {
+        background-color: white;
+        color: black;
+}
+
+.black {
+        background-color: black;
+        color: white;
+}
+
+.feature-title {
+        padding: 0.4em;
+        width: 8em;
+        text-align: center;
+        vertical-align: middle;
+        font-size:1.8em;
+        font-weight: bold;
+}
+
+.feature-explain {
+        padding: 0.4em;
+        width: 15em;
+        font-size:1.1em;
+        text-align: center;
+        vertical-align: middle;
+}
+
+.feature-figure {
+        padding: 0.4em;
+        text-align: center;
+        vertical-align: middle;
+}
+
 
 .bottom-link {
         padding: 0.8em;
@@ -240,21 +285,21 @@ input {
 
 
 input[type=email] {
-  display: inline-block;
-  color: black;
-  padding: 0.6em;
-  width: 220px;
-  box-sizing: border-box;
-  background-color: rgba(180,180,180,1);
-  border: none;
-  border-radius: 2px;
-  margin: 0.2em auto;
-  transition:background-color 0.5s ease;
-  vertical-align: middle;
+        display: inline-block;
+        color: black;
+        padding: 0.6em;
+        width: 220px;
+        box-sizing: border-box;
+        background-color: rgba(180,180,180,1);
+        border: none;
+        border-radius: 2px;
+        margin: 0.2em auto;
+        transition:background-color 0.5s ease;
+        vertical-align: middle;
 }
 
 input[type=email]:focus {
-  background-color: rgba(255,255,255,1);
+        background-color: rgba(255,255,255,1);
 }
 
 .subscribe-button {
@@ -279,3 +324,4 @@ input[type=email]:focus {
         border: 0;
         outline: 0;
 }
+
